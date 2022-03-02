@@ -21,9 +21,9 @@ QString RemoveInvalidFileName(QString fileName)
 
 #define SELECTED_ROWS_INDEX                                                                                                                                              \
     [&]() {                                                                                                                                                              \
-        const auto &__selection = connectionsTable->selectedItems();                                                                                                     \
+        const auto &selections = connectionsTable->selectedItems();                                                                                                     \
         QSet<int> rows;                                                                                                                                                  \
-        for (const auto &selection : __selection)                                                                                                                        \
+        for (const auto &selection : selections)                                                                                                                        \
             rows.insert(connectionsTable->row(selection));                                                                                                               \
         return rows;                                                                                                                                                     \
     }()
