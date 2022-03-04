@@ -72,7 +72,7 @@ jobs:
         setup-python: false
 
     - name: run-vcpkg
-      uses: lukka/run-vcpkg@v7.3
+      uses: lukka/run-vcpkg@v10.1
       with:
         vcpkgArguments: protobuf openssl grpc libuv uvw
         vcpkgGitCommitId: c69096659f49e2b1aca532ea5c2f8c135182519b
